@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_2.1_FightGame_Diego</title>
+    <link href="CSS_Sound_Game2_Diego.css" rel = "stylesheet" type = "text/css"/>
+
+</head>
+<body>
+    <h3>
+        Rules:
+    <br>
+    Attack the enemy <br> And <br> Block incoming attacks when timer runs out!
+    </h3>
+    <center>
+        <h4>
+            FIGHT OF CENTUARY 2! <br> DELUXE EDITION!!
+        </h4>
+    <button id = "startMatchbutton" onclick="startMatch()">Start Match</button>
+    <br><br>
+    <img src = "Fighter2.webp"/>
+    <section>
+        <div class="container">
+            <h1>00:00</h1>
+        </div>
+    </section>
+    <progress value="100" max="100" id="playerHealth"></progress>
+    <progress value="100" max="100" id="health"></progress>
+    <br><br>
+
+    <button onclick="attackEnemy()">Attack</button>
+    <button id="stopSound" onclick="blockEnemy()" disabled="true">Block</button>
+
+    <br>
+    <button onclick="restartMatch()">Restart Match</button>
+
+
+    <p>
+        SCORE
+    </p>
+
+    <h2 id="cash"></h2>
+    <img src = "FightBack.jpg"/>
+<br><br>
+    <audio controls>
+        <source src="SUI_sound.mp3" type = "audio/mp3"></source>
+    </audio>
+    <audio controls>
+        <source src="punch-95294.mp3" type = "audio/mp3"></source>
+    </audio>
+    <audio controls>
+        <source src="muffled-party-music-183774.mp3" type = "audio/mp3"></source>
+    </audio>
+    <audio controls>
+        <source src="punch-2.mp3" type = "audio/mp3"></source>
+    </audio>
+    </center>
+    <script src="JavaScript_Sounds_FightGame2_Diego.js"></script>
+</body>
+</html>
